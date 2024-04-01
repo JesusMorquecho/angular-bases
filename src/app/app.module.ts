@@ -4,14 +4,15 @@ import { CounterModule } from './counter/counter.module';
 import { HeroesModule } from './heroes/heroes.module';
 
 import { AppComponent } from './app.component';
-import { CommonModule } from '@angular/common';
+import { DbzModule } from './dbz/dbz.module';
+import { DbzService } from './dbz/services/dbz.service';
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
-    BrowserModule,CounterModule,HeroesModule,
+    BrowserModule,CounterModule,HeroesModule, DbzModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
